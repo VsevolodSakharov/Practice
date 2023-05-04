@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #060B35;
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .header {
+    padding: 10px 40px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  .nav_list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav_list .list_item {
+    padding: 12px 10px;
+  }
+  .nav_list .selected {
+    border-bottom: 4px solid #00ACDC;
+  }
+  .nav_list .list_item a {
+    color: #060B35;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .nav_list .list_item a.current_link {
+    color: #00ACDC;
+    pointer-events: none;
+  }
+  .nav_list .list_item a:hover, .nav_list .list_item a :active {
+    color: #00ACDC;
+  }
+  .main {
+    padding: 51px 0px;
+    margin: 0px auto;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-auto-rows: minmax(100px, auto);
+    row-gap: 48px;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+  .card {
+    border: 1px solid #F3F3F3;
+    border-radius: 5px;
+    max-width: 200px;
+    padding: 16px;
+    display: grid;
+    justify-content: center;
+  }
+  .card > * {
+    padding: 2px 0;
+  }
+  .card .card_image {
+    max-width: 100%;
+    margin: 0px auto;
+  }
+  .card .card_title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .card .card_code {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #616070;
+  }
+  .card .card_ratebox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+  }
+  .card .card_ratebox .stars_icon {
+    color: #FFDE6A;
+  }
+  .card .card_ratebox .unselected {
+    color: #F3F3F3;
+  }
+  .card .card_ratebox .ratebox_review {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: right;
+  }
+  .card .card_pricebox {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+  }
+  .card .card_pricebox .pricebox_text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #616070;
+  }
+  .card .card_pricebox .pricebox_value {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: right;
+  }
+  .card .card_link {
+    display: flex;
+    justify-content: center;
+  }
+  .card .card_link .link_button {
+    width: 166px;
+    height: 40px;
+    border: 1px solid #00ACDC;
+    border-radius: 5px;
+    background-color: #00ACDC;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .card .card_link .link_button:hover, .card .card_link .link_button :active {
+    background-color: white;
+    color: #00ACDC;
+  }
+}
